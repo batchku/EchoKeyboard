@@ -20,7 +20,6 @@
 		41720333296F8A14003DE982 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 41720332296F8A14003DE982 /* Tonic */; };
 		419DF0642970D33300FE0A82 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 419DF0632970D33300FE0A82 /* AudioKitUI */; };
 		419DF0662970DD3B00FE0A82 /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = 419DF0652970DD3B00FE0A82 /* Samples */; };
-		419DF06829712B4300FE0A82 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 419DF06729712B4300FE0A82 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -168,7 +167,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				419DF06829712B4300FE0A82 /* Info.plist in Resources */,
 				419DF0662970DD3B00FE0A82 /* Samples in Resources */,
 				4172029E296F720F003DE982 /* Preview Assets.xcassets in Resources */,
 				4172029B296F720F003DE982 /* Assets.xcassets in Resources */,
@@ -310,13 +308,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_XCC_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Echo Keyboard/Preview Content\"";
 				DEVELOPMENT_TEAM = V9DBGV72NL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -340,13 +339,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_XCC_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Echo Keyboard/Preview Content\"";
 				DEVELOPMENT_TEAM = V9DBGV72NL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
