@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41720297296F720E003DE982 /* Echo_KeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41720296296F720E003DE982 /* Echo_KeyboardApp.swift */; };
+		41720299296F720E003DE982 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41720298296F720E003DE982 /* ContentView.swift */; };
+		4172029B296F720F003DE982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4172029A296F720F003DE982 /* Assets.xcassets */; };
+		4172029E296F720F003DE982 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4172029D296F720F003DE982 /* Preview Assets.xcassets */; };
+		417202A6296F72D0003DE982 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 417202A5296F72D0003DE982 /* AudioKit */; };
+		417202A9296F72E3003DE982 /* DunneAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 417202A8296F72E3003DE982 /* DunneAudioKit */; };
+		417202AC296F72F1003DE982 /* KissFFT in Frameworks */ = {isa = PBXBuildFile; productRef = 417202AB296F72F1003DE982 /* KissFFT */; };
+		417202AF296F730A003DE982 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 417202AE296F730A003DE982 /* SoundpipeAudioKit */; };
+		417202B2296F731F003DE982 /* SporthAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 417202B1296F731F003DE982 /* SporthAudioKit */; };
+		417202BB296F7C6A003DE982 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417202BA296F7C6A003DE982 /* KeyboardHandler.swift */; };
+		41720333296F8A14003DE982 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 41720332296F8A14003DE982 /* Tonic */; };
+		419DF0642970D33300FE0A82 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 419DF0632970D33300FE0A82 /* AudioKitUI */; };
+		419DF0662970DD3B00FE0A82 /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = 419DF0652970DD3B00FE0A82 /* Samples */; };
+		419DF06829712B4300FE0A82 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 419DF06729712B4300FE0A82 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41720293296F720E003DE982 /* Echo Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Echo Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41720296296F720E003DE982 /* Echo_KeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Echo_KeyboardApp.swift; sourceTree = "<group>"; };
+		41720298296F720E003DE982 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4172029A296F720F003DE982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4172029D296F720F003DE982 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		417202BA296F7C6A003DE982 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		417202BD296F8129003DE982 /* Pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pictures; sourceTree = "<group>"; };
+		419DF0652970DD3B00FE0A82 /* Samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Samples; sourceTree = "<group>"; };
+		419DF06729712B4300FE0A82 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41720290296F720E003DE982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419DF0642970D33300FE0A82 /* AudioKitUI in Frameworks */,
+				41720333296F8A14003DE982 /* Tonic in Frameworks */,
+				417202B2296F731F003DE982 /* SporthAudioKit in Frameworks */,
+				417202AC296F72F1003DE982 /* KissFFT in Frameworks */,
+				417202A6296F72D0003DE982 /* AudioKit in Frameworks */,
+				417202AF296F730A003DE982 /* SoundpipeAudioKit in Frameworks */,
+				417202A9296F72E3003DE982 /* DunneAudioKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4172028A296F720E003DE982 = {
+			isa = PBXGroup;
+			children = (
+				41720295296F720E003DE982 /* Echo Keyboard */,
+				41720294296F720E003DE982 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41720294296F720E003DE982 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41720293296F720E003DE982 /* Echo Keyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41720295296F720E003DE982 /* Echo Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				419DF0652970DD3B00FE0A82 /* Samples */,
+				417202BD296F8129003DE982 /* Pictures */,
+				41720296296F720E003DE982 /* Echo_KeyboardApp.swift */,
+				41720298296F720E003DE982 /* ContentView.swift */,
+				4172029A296F720F003DE982 /* Assets.xcassets */,
+				4172029C296F720F003DE982 /* Preview Content */,
+				417202BA296F7C6A003DE982 /* KeyboardHandler.swift */,
+				419DF06729712B4300FE0A82 /* Info.plist */,
+			);
+			path = "Echo Keyboard";
+			sourceTree = "<group>";
+		};
+		4172029C296F720F003DE982 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4172029D296F720F003DE982 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41720292296F720E003DE982 /* Echo Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417202A1296F720F003DE982 /* Build configuration list for PBXNativeTarget "Echo Keyboard" */;
+			buildPhases = (
+				4172028F296F720E003DE982 /* Sources */,
+				41720290296F720E003DE982 /* Frameworks */,
+				41720291296F720E003DE982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Echo Keyboard";
+			packageProductDependencies = (
+				417202A5296F72D0003DE982 /* AudioKit */,
+				417202A8296F72E3003DE982 /* DunneAudioKit */,
+				417202AB296F72F1003DE982 /* KissFFT */,
+				417202AE296F730A003DE982 /* SoundpipeAudioKit */,
+				417202B1296F731F003DE982 /* SporthAudioKit */,
+				41720332296F8A14003DE982 /* Tonic */,
+				419DF0632970D33300FE0A82 /* AudioKitUI */,
+			);
+			productName = "Echo Keyboard";
+			productReference = 41720293296F720E003DE982 /* Echo Keyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4172028B296F720E003DE982 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					41720292296F720E003DE982 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 4172028E296F720E003DE982 /* Build configuration list for PBXProject "Echo Keyboard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4172028A296F720E003DE982;
+			packageReferences = (
+				417202A4296F72CF003DE982 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				417202A7296F72E3003DE982 /* XCRemoteSwiftPackageReference "DunneAudioKit" */,
+				417202AA296F72F1003DE982 /* XCRemoteSwiftPackageReference "KissFFT" */,
+				417202AD296F730A003DE982 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+				417202B0296F731F003DE982 /* XCRemoteSwiftPackageReference "SporthAudioKit" */,
+				41720331296F8A14003DE982 /* XCRemoteSwiftPackageReference "Tonic" */,
+				419DF0622970D33300FE0A82 /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+			);
+			productRefGroup = 41720294296F720E003DE982 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41720292296F720E003DE982 /* Echo Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41720291296F720E003DE982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419DF06829712B4300FE0A82 /* Info.plist in Resources */,
+				419DF0662970DD3B00FE0A82 /* Samples in Resources */,
+				4172029E296F720F003DE982 /* Preview Assets.xcassets in Resources */,
+				4172029B296F720F003DE982 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4172028F296F720E003DE982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41720299296F720E003DE982 /* ContentView.swift in Sources */,
+				41720297296F720E003DE982 /* Echo_KeyboardApp.swift in Sources */,
+				417202BB296F7C6A003DE982 /* KeyboardHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4172029F296F720F003DE982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		417202A0296F720F003DE982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		417202A2296F720F003DE982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Echo Keyboard/Preview Content\"";
+				DEVELOPMENT_TEAM = V9DBGV72NL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "studio.irl.Echo-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		417202A3296F720F003DE982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Echo Keyboard/Preview Content\"";
+				DEVELOPMENT_TEAM = V9DBGV72NL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "studio.irl.Echo-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4172028E296F720E003DE982 /* Build configuration list for PBXProject "Echo Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4172029F296F720F003DE982 /* Debug */,
+				417202A0296F720F003DE982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		417202A1296F720F003DE982 /* Build configuration list for PBXNativeTarget "Echo Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417202A2296F720F003DE982 /* Debug */,
+				417202A3296F720F003DE982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		417202A4296F72CF003DE982 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		417202A7296F72E3003DE982 /* XCRemoteSwiftPackageReference "DunneAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/DunneAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		417202AA296F72F1003DE982 /* XCRemoteSwiftPackageReference "KissFFT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/KissFFT.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		417202AD296F730A003DE982 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		417202B0296F731F003DE982 /* XCRemoteSwiftPackageReference "SporthAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SporthAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		41720331296F8A14003DE982 /* XCRemoteSwiftPackageReference "Tonic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Tonic.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		419DF0622970D33300FE0A82 /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		417202A5296F72D0003DE982 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417202A4296F72CF003DE982 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		417202A8296F72E3003DE982 /* DunneAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417202A7296F72E3003DE982 /* XCRemoteSwiftPackageReference "DunneAudioKit" */;
+			productName = DunneAudioKit;
+		};
+		417202AB296F72F1003DE982 /* KissFFT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417202AA296F72F1003DE982 /* XCRemoteSwiftPackageReference "KissFFT" */;
+			productName = KissFFT;
+		};
+		417202AE296F730A003DE982 /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417202AD296F730A003DE982 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+		417202B1296F731F003DE982 /* SporthAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417202B0296F731F003DE982 /* XCRemoteSwiftPackageReference "SporthAudioKit" */;
+			productName = SporthAudioKit;
+		};
+		41720332296F8A14003DE982 /* Tonic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41720331296F8A14003DE982 /* XCRemoteSwiftPackageReference "Tonic" */;
+			productName = Tonic;
+		};
+		419DF0632970D33300FE0A82 /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 419DF0622970D33300FE0A82 /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4172028B296F720E003DE982 /* Project object */;
+}
